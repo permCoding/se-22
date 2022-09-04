@@ -13,5 +13,7 @@ function get_array_sorting(array) {
 }
 
 
-module.exports.sorting = get_array_sorting;
-module.exports.Student = Student;
+module.exports = {
+	sorting: get_array_sorting,
+	Student: Student
+}

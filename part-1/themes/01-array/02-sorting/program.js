@@ -1,4 +1,4 @@
-const m = require('./08-module'); // пример подключения
+const m = require('./module'); // пример подключения
 
 let students = [
     new m.Student('Арни', 18),

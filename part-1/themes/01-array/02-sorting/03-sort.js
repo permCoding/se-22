@@ -6,6 +6,8 @@ let objects = [
     {id: 3, 'rating st': 2.0, name: 'Bbb'}
 ];
 
+console.clear();
+
 console.log(`name = ${objects[0].name}`);
 
 console.log(
