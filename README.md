@@ -39,7 +39,7 @@ npm i название-пакета
 
 Семестр 1  
 Лекция 01 - 05.10.22 - [Программная инженерия](https://docs.google.com/presentation/d/1fJ3FA3rolKLPQhsjJaUgCpl53H-k6FthlGoa6kzm3bs/edit?usp=sharing)  
-Лекция 02 - 12.10.22 - [Введение](https://github.com/permCoding/se-22-nodejs/tree/main/part-1/themes)  
+Лекция 02 - 12.10.22 - [Методы работы с массивами](https://github.com/permCoding/se-22/tree/main/part-1/themes/01-array)  
 
 ---  
 
