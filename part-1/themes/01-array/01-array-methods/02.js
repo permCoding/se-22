@@ -1,3 +1,5 @@
+const { clear_win } = require("./module");
+
 // инициализация массива, Array, spread, keys(), from
 
 function example_01(amount=3) { // генерация массива, параметр по умолчанию
@@ -13,19 +15,19 @@ function example_01(amount=3) { // генерация массива, парам
 function example_02(amount=3) { // заполнение массива
     console.log(
         Array(amount)
-        .fill(0)
+            .fill(0)
     );
 
     console.log(
         Array(amount)
-        .fill(0)
-        .map((_, index) => ++index) // отображение массива
+            .fill(0)
+            .map((_, index) => ++index) // отображение массива
     );
 
     console.log(
         Array(amount)
-        .fill(0)
-        .map(() => Math.floor(Math.random()*100)) // генерация массива
+            .fill(0)
+            .map(() => Math.floor(Math.random()*100)) // генерация массива
     );
 }
 
@@ -40,7 +42,7 @@ function example_03(amount=3) { // заполнение массива, from
 }
 
 function example_04() { // статический метод from
-    arr = Array.from('JavaScript');
+    let arr = Array.from('JavaScript');
     console.log(...arr);
     let line = arr.reverse().join(' ');
     console.log(line);
@@ -50,7 +52,6 @@ function example_04() { // статический метод from
 }
 
 function example_05() { // применение spread
-    console.clear();
     let arr1 = [1, 2, 3];
     let arr2 = [0, arr1, 4, 5]; // вставить массив как элемент
     let arr3 = [0, ...arr1, 4, 5]; // вставить элементы массива, spread
@@ -67,10 +68,12 @@ function example_05() { // применение spread
     });
 }
 
+clear_win(1);
 
 // example_01();
 // example_01(5);
-example_02(5);
+
+// example_02(5);
 // example_03(5);
 // example_04();
-// example_05();
+example_05();
