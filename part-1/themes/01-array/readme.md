@@ -1,10 +1,23 @@
 # Тема 1 - Методы работы с массивами  
 
+```js  
+split, join, reverse, concate,  
+sort,  
+map, filter, reduce, length, forEach,  
+push, unshift,  
+pop, shift,  
+slice, splice,  
+delete arr[i]  
+i in arr, include  
+every, some  
+table[row][col]  
+```
+
 ---  
 
-## Сортировка вставками  
+### Лабораторное занятие 1  
 
----  
+**Исследование функции сортировки массива вставками**  
 
 ***Задания:***  
 
