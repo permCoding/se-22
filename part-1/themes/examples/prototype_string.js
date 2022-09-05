@@ -6,6 +6,6 @@ String.prototype.ChangeCase = function () {
         .join('')
 }
 
-let line = "World мир"
+let line = "World - мир"
 
 console.log(line.ChangeCase())

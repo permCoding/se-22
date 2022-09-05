@@ -1,10 +1,22 @@
 # Тема 1 - Методы работы с массивами  
 
+[MDN Web docs - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
+
+```js  
+split, join, reverse, concate, sort, 
+map, filter, reduce, length, forEach,  
+push, unshift, pop, shift, toString, 
+slice, splice, indexOf, from, keys, values, 
+delete arr[i]  
+i in arr, includes, every, some  
+table[row][col]  
+```
+
 ---  
 
-## Сортировка вставками  
+### Лабораторное занятие 1  
 
----  
+**Исследование функции сортировки массива вставками**  
 
 ***Задания:***  
 

@@ -1,10 +1,13 @@
-# se-22
+# se-22  
+
 Программная инженерия 22-23  
 software engineering 22-23  
 
 **useful links**  
 [Дистант | Программная инженерия - bbb6](https://bbb6.psaa.ru/b/76k-oto-gpt-xpb)  
 [Рейтинг группы ПИб-3]()  
+[Учебник про Node.js](https://pcoding.ru/pdf/jsFuncCoding.pdf)  
+[MDN Web docs - JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)  
 
 Объём учебной дисциплины:  
 | семестр | Лекций | ЛабРаб | Отчётность |
