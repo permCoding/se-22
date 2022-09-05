@@ -27,7 +27,8 @@ function example_02(amount=3) { // заполнение массива
     console.log(
         Array(amount)
             .fill(0)
-            .map(() => Math.floor(Math.random()*100)) // генерация массива
+            .map(() => Math.floor(Math.random()*100))
+            .slice(0, 3) // генерация массива
     );
 }
 
@@ -72,8 +73,7 @@ clear_win(1);
 
 // example_01();
 // example_01(5);
-
-// example_02(5);
+example_02(10);
 // example_03(5);
 // example_04();
-example_05();
+// example_05();
