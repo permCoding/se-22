@@ -1,23 +1,23 @@
-// метод объекта массив - sort
+// sort - это метод объекта Array
 
 let sort_01 = function (arr) {
     return arr.sort(); // сортирует элементы как строки
 }
 
 /**
- * сортировка чисел
- * a-b <0  a,b
- * a-b =0  остаются как есть
- * a-b >0  b,a
+ * функция сортировки чисел  
+ * a-b <0  => a,b;  
+ * a-b =0  => остаются как есть;  
+ * a-b >0  => b,a;  
  * @param {*} arr - массив чисел
- * @returns 
+ * @returns {number}
  */
 let sort_02 = function (arr) {
     return arr.sort((a,b) => a-b);
 }
 
 let sort_03 = function (arr) {
-    return arr.sort((a,b) => a>b? -1: 1);
+    return arr.sort((a,b) => a>b? -1: 1); // тернарная операция
 }
 
 console.clear();

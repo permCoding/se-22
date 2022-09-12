@@ -11,7 +11,7 @@ console.log(languages);
 console.table(languages);
 
 languages // если имя поля с пробелом
-    .sort((a, b) => b['name lang'] - a['name lang'])
+    .sort((a, b) => a['name lang'] > b['name lang']? +1: -1)
     .forEach(x => console.log(x['name lang'])); 
 
 languages // если имя поля без пробела

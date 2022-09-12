@@ -31,19 +31,19 @@ let students = [
 //     .forEach(item => console.log(item));
 
 
-ex_01(students)
-    .forEach(item => console.log(item));
+// ex_01(students) // сортируем по рейтингу
+//     .forEach(item => console.log(item));
 
 
 // ex_02(students)
 //     .forEach(item => console.log(item));
 
 
-// ex_03(students)
-//     .forEach(item => console.log(item));
+ex_03(students)
+    .forEach(item => console.log(item));
 
 
-console.log('этот вывод для контроля \n\
+console.log('\nэтот вывод для контроля \n\
 массив передаётся по ссылке \n\
 поэтому исходный массив тоже сортируется \n\
 на самом деле просто две переменные ссылаются на один массив');
