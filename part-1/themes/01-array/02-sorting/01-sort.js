@@ -13,11 +13,11 @@ let sort_01 = function (arr) {
  * @returns {number}
  */
 let sort_02 = function (arr) {
-    return arr.sort((a,b) => a-b);
+    return arr.sort((a,b) => b - a);
 }
 
 let sort_03 = function (arr) {
-    return arr.sort((a,b) => a>b? -1: 1); // тернарная операция
+    return arr.sort((a,b) => b>a? +1: -1); // тернарная операция
 }
 
 console.clear();

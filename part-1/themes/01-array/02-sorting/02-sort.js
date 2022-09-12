@@ -27,7 +27,7 @@ let students = [
 ];
 
 // ex_01(students)
-//     .map(item => { item[0] = 0; return item; })
+//     .map((item, i) => { item[0] = i; return item; })
 //     .forEach(item => console.log(item));
 
 
@@ -35,12 +35,12 @@ let students = [
 //     .forEach(item => console.log(item));
 
 
-// ex_02(students)
-//     .forEach(item => console.log(item));
-
-
-ex_03(students)
+ex_02(students)
     .forEach(item => console.log(item));
+
+
+// ex_03(students)
+//     .forEach(item => console.log(item));
 
 
 console.log('\nэтот вывод для контроля \n\
