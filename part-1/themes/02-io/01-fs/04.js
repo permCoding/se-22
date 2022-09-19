@@ -9,9 +9,9 @@ let lines = fs
     .split(/\r?\n/)
     .slice(1)
 
-content = [
+array_lines = [
     '// copy program file' , 
     ...lines
 ]
 
-fs.writeFileSync(`_${file_name}`, content.join('\n'))
+fs.writeFileSync(`_${file_name}`, array_lines.join('\n'))
