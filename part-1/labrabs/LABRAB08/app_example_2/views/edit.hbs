@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>edit abiturient</title>
+    <meta charset="utf-8" />
+    <style>.field{width:200px;}</style>
+</head>
+
+<body>
+    <h1>Изменить данные</h1>
+    <form action="/edit" method="POST">
+        <input type="hidden" name="id" value="{{abiturient.id}}" />
+        
+        <label>Имя</label><br>
+        <input name="firstName" class="field" value="{{abiturient.firstName}}" /><br><br>
+
+        <label>Фамилия</label><br>
+        <input name="lastName" class="field" value="{{abiturient.lastName}}" /><br><br>
+        
+        <label>Рейтинг</label><br>
+        <input name="rating" type="number" class="field" min="0" max="300" value="{{abiturient.rating}}" /><br><br>
+
+        <label>Город</label><br>
+        <input name="city" class="field" value="{{abiturient.city}}" /><br><br>
+        
+        <input type="submit" value="Сохранить" />
+    </form>
+    <a href="/">На главную</a>
+</body>
+
+<html>

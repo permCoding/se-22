@@ -1,0 +1,20 @@
+BODY {
+    background-color: gainsboro; /* цвет фона */
+    font-family: Arial, Helvetica, sans-serif; /* шрифты */
+}
+
+TABLE {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    width: 60%; /* Ширина таблицы */
+}
+
+TH, TD {
+    border: 1px solid black; /* Параметры рамки */
+    text-align: center; /* Выравнивание по центру */
+    padding: 4px; /* Поля вокруг текста */
+}
+
+TH {
+    background: #fc0; /* Цвет фона ячейки */
+    height: 30px; /* Высота ячеек */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MySQL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+    <center>
+    <h3>Список абитуриентов</h1>
+    <p><a href="/create">Добавить абитуриента</a></p>
+    <table>
+        <tr>
+            <th>Редактор</th>
+            <th>Фамилия&nbsp;<a href="/sort/lastName.ASC">▲</a><a href="/sort/lastName.DESC">▼</a></th>
+            <th>Имя</th>
+            <th>Рейтинг&nbsp;<a href="/sort/rating.ASC">▲</a><a href="/sort/rating.DESC">▼</a></th>
+            <th>Город</th>
+        </tr>
+        {{#each abiturs}}
+            <tr>
+                <td width=180 class="editor">
+                    <form action="/edit/{{this.id}}" method="GET" style="display:inline;">
+                        <input type="submit" value="Изменить" />
+                    </form>
+                    <form action="/delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Удалить" />
+                    </form>
+                </td>
+                <td>{{this.lastName}}</td>
+                <td>{{this.firstName}}</td>
+                <td>{{this.rating}}</td>
+                <td>{{this.city}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+
+<html>

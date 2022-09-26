@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MySQL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <center>
+    <h3>Список абитуриентов</h1>
+    <table>
+        <tr>
+            <th>Рейтинг</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Город</th>
+        </tr>
+        {{#each abiturs}}
+            <tr>
+                <td>{{this.rating}}</td>
+                <td>{{this.lastName}}</td>
+                <td>{{this.firstName}}</td>
+                <td>{{this.city}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+
+<html>

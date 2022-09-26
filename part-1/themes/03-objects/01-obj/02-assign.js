@@ -51,10 +51,12 @@ function ex_03() { // добавить несколько объектов
 
     let target = Object.assign(obj, source, data);
 
-    console.log(JSON.stringify(target));
+    // console.log(JSON.stringify(target, undefined, 4));
+    console.log(JSON.stringify(target, ['name','group'], 4));
 }
 
 
+console.clear();
 // ex_01();
 // ex_02();
 ex_03();

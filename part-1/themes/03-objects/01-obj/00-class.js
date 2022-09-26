@@ -14,10 +14,11 @@ let students =  [
     new Student('Иванов', 22)
 ]
 
-students.forEach(st => console.log(st.toString()));
+students.forEach(st => console.log(st.toString()))
 
-console.log(students[0] > students[1]? 'старше': 'младше');
+console.log(students[0] > students[1]? 'старше': 'младше')
+console.log(students[1] > students[2]? 'старше': 'младше')
 
-students.sort((a, b) => a.age - b.age);
+students.sort((a, b) => a.age - b.age)
 
-students.forEach(st => console.log(st.toString()));
+students.forEach(st => console.log(st.toString()))

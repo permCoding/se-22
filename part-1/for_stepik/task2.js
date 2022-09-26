@@ -19,7 +19,7 @@ rl
         let res = lines[0]
             .split(' ')
             .map(x => +x)
-            .filter(x => x > 10)
+            .filter(x => x < 10)
             .reduce((a,b) => a+b, 0);
         console.log(res);
 });
