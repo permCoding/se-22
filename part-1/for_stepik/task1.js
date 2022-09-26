@@ -16,8 +16,10 @@ let lines = []; // массив для хранения считываемых �
 rl
     .on('line', line => lines.push(line))
     .on('close', () => {
-        let res = Math.max(...lines
-            .map(x => Number(x))
-            .filter(x => x%2 != 0));
+        let res = Math.max(
+            ...lines
+                .map(x => Number(x))
+                .filter(x => x%2 != 0)
+        );
         console.log(res);
 });

@@ -4,6 +4,7 @@
 let source = {
     name: 'Alex',
     age: 22,
+    
     // toString: () => `name: ${this.name}, age: ${this.age}`,
     // toString: function() { return `name: ${this.name}, age: ${this.age}`},
     toString() { return `name: ${this.name}, age: ${this.age}`; },
@@ -35,5 +36,5 @@ const ex_02 = (id) => {
     console.log(`age = ${source.get_age()}`);    
 }
 
-// ex_01();
-ex_02(666);
+ex_01();
+// ex_02(666);

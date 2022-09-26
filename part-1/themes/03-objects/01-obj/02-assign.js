@@ -35,7 +35,7 @@ function ex_02() { // добавить в существующий объект
     console.log(`source => ${source}`);
     console.log(`target => ${target}`);
 
-    for (let item in target) {
+    for (let item in target) { // перебрать поля объекта
         console.log(item, target[item]);
     }
 
@@ -52,7 +52,7 @@ function ex_03() { // добавить несколько объектов
     let target = Object.assign(obj, source, data);
 
     // console.log(JSON.stringify(target, undefined, 4));
-    console.log(JSON.stringify(target, ['name','group'], 4));
+    console.log(JSON.stringify(target, ['id', 'name','group'], 4));
 }
 
 

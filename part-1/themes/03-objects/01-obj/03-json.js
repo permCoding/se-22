@@ -14,10 +14,11 @@ for (let item in source) { // все поля и методы исходного
 }
 
 let line = JSON.stringify(source); // объект в строку
-
 console.log('line =', line);
+
 let target = JSON.parse(line); // затем из строки собрать ДРУГОЙ объект
 source.age += 1; // изменим значение поля в исходном объекте
+console.log(target.age);
 
 // проверим содержимое исходного объекта
 console.log(`checking source => ${source.toString()}`); 

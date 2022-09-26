@@ -7,7 +7,7 @@ console.clear();
 let arr = clients
     .filter(elm => elm.age > 27)
     .sort((a,b) => a.age-b.age)
-    .map(obj => { return { "age": obj.age, "name": obj.name}});
+    .map(obj => { return { "age": obj.age, "name": obj.name} });
 
 console.log(arr);
 
