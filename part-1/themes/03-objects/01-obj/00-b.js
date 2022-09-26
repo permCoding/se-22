@@ -10,3 +10,7 @@ let arr = clients
     .map(obj => { return { "age": obj.age, "name": obj.name}});
 
 console.log(arr);
+
+let data = JSON.stringify(arr, null, 4);
+
+require('fs').writeFileSync('./clients-sort.json', data);
