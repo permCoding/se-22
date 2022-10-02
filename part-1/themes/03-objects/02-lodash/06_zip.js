@@ -3,12 +3,12 @@
 const _ = require('lodash');
 
 let colors = ['red', 'green', 'yellow', 'orange', 'black', 'white'];
-let hex_names = ['#FF0000', '#008000', '#FFFF00', '#FFA500'];
+let hex_names = ['#FF0000', '#008000', '#FFFF00', '#FFA500']; // undefined undefined
 
 function _sort() {
     let arr = _
         .zip(colors, hex_names)
-        .sort((a, b) => a[0] < b[0]? -1: 1);
+        .sort((a, b) => a[0] > b[0]? 1: -1);
 
     console.table(arr);
     console.log(arr);
@@ -38,7 +38,7 @@ function _order_3() {
     let arr = _(colors)
         .zip(hex_names)
         .filter(x => typeof x[1] != "undefined")
-        .map(x => [x[1], x[0]])
+        .map(x => [x[1], x[0]]) // поменять местами
         .orderBy([0], ['asc'])
         .value();
 
@@ -49,7 +49,7 @@ function _order_3() {
 function _order_4() {
     let arr = _(colors)
         .zip(hex_names)
-        .filter(x => !!x[1])
+        .filter(x => !!x[1]) // двойное отрицание вернёт true/false
         .value();
 
     console.table(arr);
@@ -63,9 +63,10 @@ function not_not() {
     console.log(!!x, !!y);    
 }
 
-// _sort();
+console.clear();
+_sort();
 // _order();
 // _order_2();
 // _order_3();
 // _order_4();
-not_not();
+// not_not();
