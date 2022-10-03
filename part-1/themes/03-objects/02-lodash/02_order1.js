@@ -3,8 +3,7 @@ const fs = require('fs');
 
 /** разбор метода _.toString() */
 function _string() {
-    let arr = _
-        .range(1, 19, 3);
+    let arr = _.range(1, 19, 3);
     let check_odd = x => x%2 != 0;
     let res = _(arr)
         .filter(check_odd) // это генератор
@@ -35,12 +34,12 @@ function _order() {
     let res = _(users)
         .filter(u => u.email.split('.').pop() === 'biz') // по домену biz
         .map(obj => _.zipObject(['name', 'email'], [obj.name, obj.email]))
-        .orderBy(['name'], ['desc'])        
+        .orderBy(['name'], ['desc'])
         .value();
     console.table(res);
 }
 
-
-_string();
+console.clear();
+// _string();
 // _sort();
-// _order();
+_order();

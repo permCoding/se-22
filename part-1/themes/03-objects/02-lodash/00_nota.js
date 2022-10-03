@@ -11,7 +11,7 @@ function _nota_lo(line) {
         .split(' ', 7) // взять первые 7
         .map(_.parseInt) // возвращает генератор
     console.log(res, _.isArray(res)? "массив":"генератор");
-    
+    // LodashWrapper - обёртка
     let arr = []; // можно из генератора в массив
     
     arr = [...res]; // способ 1
@@ -28,7 +28,7 @@ function _nota_va(line) {
         .split(' ')
         .map(_.parseInt) // _.toNumber || x => +x
         .take(7) // взять первые 7
-        .filter(x => x%2) // только нечётные
+        .filter(x => x%2 === 1) // только нечётные
         .sortBy()
         .value(); // к типу данных массив
     console.log(res, _.isArray(res)? "массив":"генератор");
@@ -40,11 +40,16 @@ function _nota_js(line) {
         .split(' ')
         .map(Number) // x => +x
         .sort((a,b)=>a-b);
-    let res = _.filter(numbers, x => x&1 > 0);
+    let res = _.filter(numbers, x => x & 1 > 0);
     console.log(res, _.isArray(res)? "массив":"генератор");
+    // 5 & 1 = ?
+    // 101
+    // 001
+    // 001
 }
 
+console.clear();
 let line = '3 2 8 9 10 1 4 2 12 1';
-_nota_lo(line);
+// _nota_lo(line);
 // _nota_va(line);
-// _nota_js(line);
+_nota_js(line);

@@ -7,8 +7,7 @@ const fs = require('fs');
 function _reduce_sync() {
     let add_odd = (acc, next) => next%2 != 0? acc + next: acc;
 
-    let fileContent = fs
-        .readFileSync("./txt/data_1.txt", "utf8");
+    let fileContent = fs.readFileSync("./txt/data_1.txt", "utf8");
     let arr = fileContent
         .split('\n')
         .map(Number);
