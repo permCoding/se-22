@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const fs = require('fs');
-
+const mens = require('./json/mens.json');
 
 
 function write_1(mens) {
@@ -20,13 +20,12 @@ function write_2(mens, new_items) {
         );
 }
 
-const mens = require('./json/mens.json');
-
-// write_1(mens);
-
 let objs = [
     { "name": "Яна", "age": 25 },
     { "name": "Яна", "age": 55 },
     { "name": "Алекс", "age": 21 }
 ]
+
+console.clear();
+// write_1(mens);
 write_2(mens, objs);

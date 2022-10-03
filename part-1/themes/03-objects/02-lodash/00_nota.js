@@ -25,6 +25,7 @@ function _nota_va(line) {
         .map(_.parseInt) // _.toNumber || x => +x
         .take(7) // взять первые 7
         .filter(x => x%2) // только нечётные
+        .sortBy()
         .value(); // к типу данных массив
     console.log(res, _.isArray(res)? "массив":"генератор");
 }
@@ -33,9 +34,10 @@ function _nota_va(line) {
 function _nota_js(line) {
     let numbers = line
         .split(' ')
-        .map(parseInt); // Number || x => +x
-    let res = _
-        .filter(numbers, x => x%2); // возвращает сразу массив
+        .map(Number) // x => +x
+        .sort((a,b)=>a-b);
+    // вторая нотация как в Питоне и возвращает сразу массив
+    let res = _.filter(numbers, x => x&1 > 0);
     console.log(res, _.isArray(res)? "массив":"генератор");
 }
 

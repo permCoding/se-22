@@ -1,3 +1,14 @@
+function ex_00() {
+    let foo = {
+        foundation: 'Mozilla', 
+        model: 'box', 
+        week: 45, 
+        transport: 'car', 
+        month: 7
+    };
+    console.log(JSON.stringify(foo, null, 4));
+}
+
 
 function ex_01() {
     function replacer(key, value) {
@@ -8,7 +19,7 @@ function ex_01() {
         return value;
       }
       
-    var foo = {
+    let foo = {
         foundation: 'Mozilla', 
         model: 'box', 
         week: 45, 
@@ -22,7 +33,7 @@ function ex_01() {
 function ex_02() {
     const replacer = ['week', 'month'];
       
-    var foo = {
+    let foo = {
         foundation: 'Mozilla', 
         model: 'box', 
         week: 45, 
@@ -36,7 +47,7 @@ function ex_02() {
 function ex_03() {
     const replacer = null;
       
-    var foo = {
+    let foo = {
         foundation: "Mozilla", 
         model: "box", 
         week: 45, 
@@ -51,6 +62,8 @@ function ex_03() {
     console.log(JSON.stringify(foo, replacer, 4));
 }
 
-ex_01();
-ex_02();
-ex_03();
+console.clear();
+ex_00();
+// ex_01();
+// ex_02();
+// ex_03();

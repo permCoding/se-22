@@ -1,16 +1,16 @@
 /** сортировка массива объектов users по двум параметрам
  * задача: 
- * сорт по полю `name` по возрастанию/убыванию  
+ * сорт по полю `name` по возрастанию/убыванию  
  * и в группах по полю `age` по возрастанию/убыванию
 */
 
 const _ = require('lodash');
 
-const users = [
-    { name: 'Оля',   age: 48 },
-    { name: 'Борис', age: 34 },
-    { name: 'Оля',   age: 40 },
-    { name: 'Борис', age: 36 }
+const users = [
+    { name: 'Оля',   age: 48 },
+    { name: 'Борис', age: 34 },
+    { name: 'Оля',   age: 40 },
+    { name: 'Борис', age: 36 }
 ];
 
 /**
@@ -21,13 +21,13 @@ const users = [
  */
 function _sort1() {
     _
-        .sortBy(users, obj => obj.name) // чистая
+        .sortBy(users, obj => obj.name) // чистая функция
         .forEach(obj => console.log(obj));
 
-    console.table(users); // проверка сохранения чистоты функций
+    console.table(users); // проверка немутабельности
 
     users
-        .sort((a,b) => a.name < b.name? -1: 1) // не чистая
+        .sort((a,b) => a.name > b.name? 1: -1) // не чистая
         .forEach(obj => console.log(obj));
 }
 
@@ -48,8 +48,8 @@ function _sort2() {
  * в двух нотациях  
  */
 function _sort3() {
-    console.log(_.orderBy(users, ['name','age'], ['asc','desc']));
-    console.log(_(users).orderBy(['name','age'], ['asc','desc']).value());
+    console.log(_.orderBy(users, ['name','age'], ['asc','desc']));
+    console.log(_(users).orderBy(['name','age'], ['asc','desc']).value());
 }
 
 
@@ -57,4 +57,4 @@ function _sort3() {
 // _sort2();
 _sort3();
 
-console.table(users); // проверка сохранения чистоты функций
+console.table(users); // проверка сохранения массива
