@@ -1,4 +1,4 @@
-
+// поток функций
 
 const _ = require('lodash');
 
@@ -28,4 +28,3 @@ let get_arr = _.flow( // ещё проще - возвращает функцию
     items => _.map(items, stud => ({rate:stud.rate, age:stud.private.age, name:stud.name}))
 );
 console.table(get_arr(students));
-

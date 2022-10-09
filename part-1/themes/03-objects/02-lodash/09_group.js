@@ -9,7 +9,7 @@ function _groups() {
     console.log('groups =', groups);
 
     _.map(groups, 
-        group => group.sort((a,b)=> a>b?1:-1)); // сортируем каждую группу по имени
+        group => group.sort((a,b) => a>b?1:-1)); // сортируем каждую группу по имени
     console.log('groups =', groups);
 
     console.log('keys =', Object.keys(groups)); // ключи групп
@@ -36,5 +36,5 @@ function _sort() {
 }
 
 console.clear();
-_groups();
-// _sort();
+// _groups();
+_sort();

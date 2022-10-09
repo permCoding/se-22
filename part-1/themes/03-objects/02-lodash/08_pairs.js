@@ -25,12 +25,8 @@ function ex_02() {
 
 function ex_03() {
     let colors = { "red": 4, "green": 2, "blue": 1, "black": 0 };
-    console.log(
-        _
-            .map(_.toPairs(colors).slice(0,2), 
-                item => _.fromPairs([item])
-            )
-    );    
+    let arr = _.toPairs(colors).slice(0,2);
+    console.log(arr.map(item => _.fromPairs([item])));    
 }
 
 function ex_04() { // массив объектов
@@ -46,7 +42,7 @@ function ex_04() { // массив объектов
             item => _.fromPairs([item])
         );
     console.log(arr_objs); 
-    console.log(JSON.stringify(arr_objs, null, 2));    
+    console.log(JSON.stringify(arr_objs, null, 2));
 }
 
 function ex_05() { // массив собрать в объект
@@ -62,6 +58,7 @@ function ex_05() { // массив собрать в объект
         .map(_.toPairs(men).filter(x => !isNumber(x[1])), 
             item => _.fromPairs([item])
         );
+    console.log(arr_objs); // массив объектов в одно поле
 
     let obj1 = _
         .reduce(arr_objs, (acc, cur) => _.assign(acc, cur),  {});
@@ -72,8 +69,8 @@ function ex_05() { // массив собрать в объект
 }
 
 console.clear();
-ex_01();
+// ex_01();
 // ex_02();
 // ex_03();
 // ex_04();
-// ex_05();
+ex_05();

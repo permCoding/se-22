@@ -1,4 +1,4 @@
-/** сортировка массива объектов users по двум параметрам
+/** сортировка массива объектов users по параметрам
  * задача: 
  * сорт по полю `name` по возрастанию/убыванию  
  * и в группах по полю `age` по возрастанию/убыванию
@@ -13,8 +13,7 @@ const users = [
     { name: 'Борис', age: 36 }
 ];
 
-/**
- * по одному параметру  
+/** по одному параметру  
  * нативный метод и lodash
  * нативный метод - мутабельный
  * lodash - не мутабельный
@@ -31,8 +30,7 @@ function _sortBy_1() {
         .forEach(obj => console.log(obj));
 }
 
-/**
- * lodash - по двум параметрам - sortBy  
+/** lodash - по двум параметрам - sortBy  
  * обычный подход
  */
 function _sortBy_2() {
@@ -42,17 +40,16 @@ function _sortBy_2() {
         return b.age - a.age;
     }
 
-    // console.log(users.sort(f_sort)); // нативный способ js - он испортит исходный массив
+    console.log(users.sort(f_sort)); // нативный способ js - он испортит исходный массив
 
     // console.log(_.sortBy(_.sortBy(users, obj => obj.name), obj => obj.age)); // не мутабельный
     // console.log(_.sortBy(_.sortBy(users, ['age']), ['name'])); // не мутабельный
-    console.log(_.sortBy( // для обратного порядка нужно повозиться
-        _.reverse(_.sortBy(users, obj => obj.age)), obj => obj.name)
-    );
+    // console.log(_.sortBy( // для обратного порядка нужно повозиться
+    //     _.reverse(_.sortBy(users, obj => obj.age)), obj => obj.name)
+    // );
 }
 
-/**
- * lodash - по двум параметрам - orderBy  
+/** lodash - по двум параметрам - orderBy  
  * подход с параметрами сортировки  
  * и направлениями asc, desc  
  * в двух нотациях  
@@ -63,7 +60,7 @@ function _orderBy_2() {
 }
 
 
-console.log('- '.repeat(9));
+console.log('\n'.repeat(3));
 
 // _sortBy_1();
 // _sortBy_2();

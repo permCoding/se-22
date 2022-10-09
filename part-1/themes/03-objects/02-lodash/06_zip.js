@@ -9,18 +9,14 @@ function _sort() {
     let arr = _
         .zip(colors, hex_names)
         .sort((a, b) => a[0] > b[0]? 1: -1);
-
-    console.table(arr);
     console.log(arr);
 }
 
 function _order() {
     let arr = _(colors)
         .zip(hex_names)
-        .orderBy([0], ['asc'])
+        .orderBy([0], ['asc']) // можно по индексам
         .value();
-
-    console.table(arr);
     console.log(arr);
 }
 
@@ -29,8 +25,6 @@ function _order_2() {
         .zip(hex_names)
         .orderBy([1, 0], ['desc','asc'])
         .value();
-
-    console.table(arr);
     console.log(arr);
 }
 
@@ -41,9 +35,7 @@ function _order_3() {
         .map(x => [x[1], x[0]]) // поменять местами
         .orderBy([0], ['asc'])
         .value();
-
     console.table(arr);
-    console.log(arr);
 }
 
 function _order_4() {
@@ -54,19 +46,19 @@ function _order_4() {
 
     console.table(arr);
     console.log(arr);
+    not_not(); // проверим двойное отрицание
 }
 
-function not_not() {
+function not_not() { // двойное отрицание => из числа в bool
     let x, y = 222;
-    console.log(x, y);
-    console.log(!x, !y);
-    console.log(!!x, !!y);    
+    console.log(x, y); // undefined 222
+    console.log(!x, !y); // true false
+    console.log(!!x, !!y); // false true
 }
 
 console.clear();
-_sort();
+// _sort();
 // _order();
 // _order_2();
 // _order_3();
-// _order_4();
-// not_not();
+_order_4();
