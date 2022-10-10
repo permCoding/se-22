@@ -69,8 +69,11 @@ function ex_05() { // массив собрать в объект
 }
 
 console.clear();
-// ex_01();
+ex_01();
 // ex_02();
 // ex_03();
 // ex_04();
-ex_05();
+// ex_05();
+
+let arr = require('./json/mens.json')
+console.log(arr)

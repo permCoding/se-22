@@ -23,9 +23,7 @@ function _sortBy_1() {
         .sortBy(users, obj => obj.name) // чистая функция
         .forEach(obj => console.log(obj));
 
-    console.table(users); // проверка немутабельности
-
-    users
+    users // нативный метод сортировки от js
         .sort((a,b) => a.name > b.name? 1: -1) // не чистая
         .forEach(obj => console.log(obj));
 }
@@ -34,6 +32,7 @@ function _sortBy_1() {
  * обычный подход
  */
 function _sortBy_2() {
+    // new_a = users.slice(0); // неглубокое копирование
     let f_sort = (a,b) => {
         if (a.name > b.name) return 1;
         if (a.name < b.name) return -1;
@@ -56,10 +55,15 @@ function _sortBy_2() {
  */
 function _orderBy_2() {
     console.log(_.orderBy(users, ['name','age'], ['asc','desc']));
-    console.log(_(users).orderBy(['name','age'], ['asc','desc']).value());
+    console.log(
+        _(users)
+            .orderBy(['name','age'], ['asc','desc'])
+            .value()
+    );
 }
 
 
+console.clear();
 console.log('\n'.repeat(3));
 
 // _sortBy_1();

@@ -11,8 +11,8 @@ function write_1(mens) {
 }
 
 function write_2(mens, new_items) {
-    // mens.push(...new_items);
-    mens = [...mens,...new_items];
+    // mens.push(...new_items); // можно так
+    mens = [...mens,...new_items]; // можно эдак
     fs
         .writeFileSync(
             './json/data_check.json', 
@@ -30,7 +30,7 @@ let objs = [
 ]
 let mens = null;
 try {
-    mens = require('./json/mens.json'); // проверить изменив имя файла    
+    mens = require('./json/mens.json'); // проверить изменив имя файла
 } catch (error) {
     console.error(error.message);
     mens = undefined;
@@ -39,5 +39,5 @@ finally {
     console.log('-\n'.repeat(5));
 }
 
-write_1(mens);
-// write_2(mens, objs);
+// write_1(mens);
+write_2(mens, objs);

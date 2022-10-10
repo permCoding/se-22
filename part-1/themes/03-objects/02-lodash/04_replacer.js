@@ -11,7 +11,7 @@ function ex_00() {
 
 function ex_01() {
     const replacer = ['week', 'month'];
-      
+    //   
     let foo = {
         foundation: 'Mozilla', 
         model: 'box', 

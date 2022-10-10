@@ -54,6 +54,8 @@ function not_not() { // двойное отрицание => из числа в 
     console.log(x, y); // undefined 222
     console.log(!x, !y); // true false
     console.log(!!x, !!y); // false true
+    let r = +'500';
+    console.log(r+r);
 }
 
 console.clear();
