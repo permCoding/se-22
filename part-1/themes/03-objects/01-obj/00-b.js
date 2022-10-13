@@ -1,16 +1,18 @@
-let clients = require("./clients.json").clients;
+let methods = {
+    'increment': function () { this.value++; },
+    'display' : function () { console.log(this.value); }
+};
+  
+function addMethods(object, methods) {
+    for (var name in methods) {
+      object[name] = methods[name];
+    }
+};
+  
+const obj = { value: 3 };
+// obj = {}; // так нельзя - объявлен как const
 
-console.clear();
-
-// console.log(clients);
-
-let arr = clients
-    .filter(elm => elm.age > 27)
-    .sort((a,b) => a.age-b.age)
-    .map(obj => { return { "age": obj.age, "name": obj.name} });
-
-console.log(arr);
-
-let data = JSON.stringify(arr, null, 4);
-
-require('fs').writeFileSync('./clients-sort.json', data);
+addMethods(obj, methods);
+obj.display();  // "3"
+obj.increment();
+obj.display();  // "4"
