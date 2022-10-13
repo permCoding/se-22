@@ -1,18 +1,21 @@
-let obj = {};
+console.clear()
 
-console.log(obj);
+let obj = {}
 
-obj.x = 12; // динамически добавим в объект
-obj.y = 10;
+console.log(obj)
 
-console.log(obj);
+obj.x = 12 // динамически добавим в объект
+obj.y = 10
 
-obj.get_divmod = (a, b) => {
-    return [Math.floor(a/b), a%b];
+console.log(obj)
+
+obj.get_divmod = function () {
+    let a = this.x, b = this.y
+    return { 'div': Math.floor(a/b), 'mod': a%b }
 }
 
-console.log(obj);
-let result = obj.get_divmod(13, 4);
-console.log(result);
-[a, b] = result;
-console.log(a, b);
+console.log(obj)
+let result = obj.get_divmod(13, 4)
+console.log(result)
+let { div, mod } = result
+console.log(`div = ${div}, mod = ${mod}`)
