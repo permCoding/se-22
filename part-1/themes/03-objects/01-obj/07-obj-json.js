@@ -13,4 +13,4 @@ console.log(arr);
 
 let data = JSON.stringify(arr, null, 4);
 
-require('fs').writeFileSync('./clients-sort.json', data);
+require('fs').writeFileSync('./json/clients-sort.json', data);
