@@ -32,7 +32,77 @@ sortBy(), orderBy()
 
 ## Задания лабораторной работы №4  
 
-### task01  
+---
+
+### task01
+
+Входные данные для этой задачи загружать из файла [users.json](./json/users.json).
+
+Из исходного массива объектов выбрать только тех юзеров, которые живут в южном полушарии. Массив объектов преобразовать так, чтобы в каждом объекте осталось только поле username и поле city, затем отсортировать массив по названию города в обратном порядке.
+Результат вывести на экран.
+
+Пример итогового вывода:
+
+```js
+[
+    { username: 'Antonette', city: 'Wisokyburgh' },
+    { username: 'Leopoldo_Corkery', city: 'South Christy' },
+    ...
+]
+```
+
+---
+
+### task02
+
+Входные данные для этой задачи загружать из файла [clients.json](./json/clients.json).
+
+Из исходного массива клиентов выбрать только тех, кто проживает в Кунгуре, отсортировать их по полу (в направлении female->male), затем по возрасту (по убыванию), затем по имени (по возрастанию).
+Результат вывести на экран.
+
+Пример итогового вывода:
+
+```js
+[
+  {
+    id: '59769',
+    isActive: true,
+    age: 29,
+    name: 'Надя Толокно',
+    gender: 'female',
+    company: 'Pussy Riot',
+    email: 'tolockno@gmail.com',
+    phone: '+8 (802) 603-1234',
+    address: { city: 'Кунгур', street: 'Ленина', apartment: '16-77' }
+  },
+  {
+    id: '59768',
+    isActive: true,
+    age: 21,
+    name: 'Ада Лавлейс',
+    gender: 'female',
+    company: 'IBM',
+    email: 'ada@ibmcorp.com',
+    phone: '+8 (882) 433-3007',
+    address: { city: 'Кунгур', street: 'Пушкина', apartment: '10-36' }
+  },
+  {
+    id: '59765',
+    isActive: true,
+    age: 21,
+    name: 'Билли Айлиш',
+    gender: 'female',
+    company: 'EMERGENT',
+    email: 'billieeilish@emergent.com',
+    phone: '+8 (831) 564-2190',
+    address: { city: 'Кунгур', street: 'Пушкина', apartment: '22-10' }
+  },
+  ...
+```
+
+---
+
+### task03
 
 Входные данные для этой задачи загружать из файла [colors.json](./json/colors.json).  
 
@@ -51,7 +121,7 @@ sortBy(), orderBy()
 
 ---  
 
-### task02  
+### task04
 
 Входные данные для этой задачи загружать из файла [colors.json](./json/colors.json).  
 
@@ -76,7 +146,7 @@ sortBy(), orderBy()
 
 ---  
 
-### task03  
+### task05
 
 Входные данные для этой задачи загружать из модуля [data.js](./json/data.js).  
 Обратите внимание, что это модуль, в котором на экспорт выставлены два массива.  
@@ -99,72 +169,3 @@ sortBy(), orderBy()
     ...
 ]
 ```
-
----  
-
-### task04  
-
-Входные данные для этой задачи загружать из файла [users.json](./json/users.json).  
-
-Из исходного массива объектов выбрать только тех юзеров, которые живут в южном полушарии. Массив объектов преобразовать так, чтобы в каждом объекте осталось только поле username и поле city, затем отсортировать массив по названию города в обратном порядке.  
-Результат вывести на экран.  
-
-Пример итогового вывода:  
-
-```js
-[
-    { username: 'Antonette', city: 'Wisokyburgh' },
-    { username: 'Leopoldo_Corkery', city: 'South Christy' },
-    ...
-]
-```
-
----  
-
-### task05  
-
-Входные данные для этой задачи загружать из файла [clients.json](./json/clients.json).  
-
-Из исходного массива клиентов выбрать только тех, кто проживает в Кунгуре, отсортировать их по полу (в направлении female->male), затем по возрасту (по убыванию), затем по имени (по возрастанию).  
-Результат вывести на экран.  
-
-Пример итогового вывода:  
-
-```js
-[
-  {
-    id: '59769',
-    isActive: true,      
-    age: 29,
-    name: 'Надя Толокно',
-    gender: 'female',
-    company: 'Pussy Riot',
-    email: 'tolockno@gmail.com',
-    phone: '+8 (802) 603-1234',
-    address: { city: 'Кунгур', street: 'Ленина', apartment: '16-77' }
-  },
-  {
-    id: '59768',
-    isActive: true,
-    age: 21,
-    name: 'Ада Лавлейс',
-    gender: 'female',
-    company: 'IBM',
-    email: 'ada@ibmcorp.com',
-    phone: '+8 (882) 433-3007',
-    address: { city: 'Кунгур', street: 'Пушкина', apartment: '10-36' }        
-  },
-  {
-    id: '59765',
-    isActive: true,
-    age: 21,
-    name: 'Билли Айлиш',
-    gender: 'female',
-    company: 'EMERGENT',
-    email: 'billieeilish@emergent.com',
-    phone: '+8 (831) 564-2190',
-    address: { city: 'Кунгур', street: 'Пушкина', apartment: '22-10' }        
-  },
-  ...
-```
-
