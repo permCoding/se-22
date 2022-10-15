@@ -1,4 +1,5 @@
 // npm install lodash
+// глубокое клонирование 
 
 const _ = require('lodash');
 

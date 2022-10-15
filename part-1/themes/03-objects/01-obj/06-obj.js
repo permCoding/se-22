@@ -1,8 +1,8 @@
-let clients = require("./clients.json").clients;
+const clients = require("./json/clients.json").clients;
 
 console.clear();
 
-// console.log(clients);
+console.log(clients[0]);
 
 let arr = clients
     .filter(elm => elm.age > 27)
