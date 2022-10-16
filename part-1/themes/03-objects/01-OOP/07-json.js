@@ -11,6 +11,6 @@ let arr = clients
 
 console.log(arr);
 
-let data = JSON.stringify(arr, null, 4);
+let data = JSON.stringify(arr, null, 4); // replacer null
 
 require('fs').writeFileSync('./json/clients-sort.json', data);

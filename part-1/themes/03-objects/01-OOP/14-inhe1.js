@@ -1,4 +1,4 @@
-// наследование как расширение
+// наследование как расширение одного класса другим
 // https://learn.javascript.ru/class-inheritance
 
 class Human {

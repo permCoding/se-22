@@ -33,8 +33,9 @@ const ex_02 = (id) => {
     console.log(source); // и оно будет доступно в "других" объектах
     
     source.get_age = () => source.age; // можно добавить метод
-    console.log(`age = ${source.get_age()}`);    
+    console.log(`age = ${target.get_age()}`); // и будет работать из другого объекта
 }
 
-ex_01();
-// ex_02(666);
+console.clear();
+// ex_01();
+ex_02(666);

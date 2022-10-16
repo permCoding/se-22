@@ -1,7 +1,7 @@
 /** создание объекта с помощью функции */
 let ex01 = () => {
-    function GetObject(x, y) {
-        if (!new.target) throw "function without new";
+    function GetObject(x, y) { // функция - конструктор объекта
+        if (!new.target) throw "function without new"; // вызов без new
         this.x = x;
         this.y = y || 1; // так как на ноль делить нельзя - лучше сделать setter
         this.get_divmod = function() {

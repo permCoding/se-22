@@ -12,6 +12,8 @@ let source = {
     }
 };
 
+console.clear();
+
 let target = _.clone(source); // клонируем объект
 
 source.id += 1; // это поле стало независимым
@@ -19,4 +21,4 @@ source.private.age = 50; // элементы поля типа объект ос
 source.private.gender = false; // элементы поля типа объект остались зависимы
 
 console.log('source =', source);
-console.log('target =', target);
+console.log('target =', target); // тут тоже поменялись значения

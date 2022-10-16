@@ -13,6 +13,7 @@ class Student {
     }
 }
 
+console.clear();
 
 let stud = new Student('Петрович');
 console.log(stud); // приватные поля не видны

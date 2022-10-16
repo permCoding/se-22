@@ -9,15 +9,16 @@ function ex_01() { // скопировать в пустой объект
         }
     };
     
-    let target = Object.assign({}, source); // копируются все свойства по отдельности в пустой объект
+    let target = Object.assign({}, source); // назначить все свойства по отдельности в пустой объект
 
     source.age += 1;
     
     console.log(`source => ${source.toString()}`);
     console.log(`target => ${target.toString()}`);
 
-    console.log(`source => ${source}`); // при интерполяции вызывается метод toString
-    console.log(`target => ${target}`);
+    console.log(`source => ${source}`);
+    console.log(`target => ${target}`); // при интерполяции приведение к строке отличается
+    console.log(target); // для сравнения
 }
 
 
@@ -57,6 +58,6 @@ function ex_03() { // добавить несколько объектов
 
 
 console.clear();
-// ex_01();
+ex_01();
 // ex_02();
-ex_03();
+// ex_03();
