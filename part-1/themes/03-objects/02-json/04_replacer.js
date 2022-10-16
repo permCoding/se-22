@@ -63,5 +63,5 @@ function ex_03() {
 console.clear();
 ex_00();
 ex_01();
-// ex_02();
-// ex_03();
+ex_02();
+ex_03();
