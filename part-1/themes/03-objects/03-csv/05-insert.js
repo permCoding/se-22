@@ -24,7 +24,8 @@ function insert_3(array, item) {
 }
 
 
-console.log('\x1Bc\n');
+console.clear();
+
 let hobbies = ut.csv_to_json('./csv/hobby.csv');
 let hobby = 'sitcom';
 

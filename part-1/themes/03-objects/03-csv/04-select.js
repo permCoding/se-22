@@ -49,14 +49,14 @@ function select_5(array) {
 
 function select_6(array) {
     return _(array)
-        .filter(obj => obj.sex == true)
+        .filter(obj => obj.sex === true)
         .map(obj => _.zipObject(['age','nameSt'],[obj.age,obj.nameSt]))
         .orderBy(['age','nameSt'], ['desc','asc'])
         .value();
 }
 
 function select_7(array) {
-    let filtred = _.filter(array, obj => obj.sex == true);
+    let filtred = _.filter(array, obj => obj.sex === true);
     let objs = _.map(filtred, obj => _.zipObject(['age','nameSt'],[obj.age,obj.nameSt]));
     let sorted = _.orderBy(objs, ['age','nameSt'], ['desc','asc']);
     return sorted;

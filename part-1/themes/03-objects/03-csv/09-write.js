@@ -1,11 +1,11 @@
 // UPDATE заменить номер куратора в группе
 
-const ut = require('./ut05');
 const _ = require('lodash');
+const ut = require('./ut05');
 
 
 function update(arr_g, group, idCur) {
-    let ig = _.findIndex(arr_g, obj => obj.nameGr == group);
+    let ig = _.findIndex(arr_g, obj => obj['nameGr'] === group);
     arr_g[ig].idCur = idCur;
 }
 
