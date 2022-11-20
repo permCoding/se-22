@@ -15,6 +15,9 @@ software engineering 22-23
 | 1 | 12 | 9 | Зачёт + КП |
 | 2 | 12 | 9 | Экзамен |
 
+[СЕМЕСТР 1](/part-1)  
+[СЕМЕСТР 2](/part-2)  
+
 ---  
 
 ## Установить  
@@ -27,6 +30,7 @@ software engineering 22-23
 Расширение для VSCode - Node.js Exec (запуск программы F8)  
 [moment - библиотека для работы со временем](https://momentjs.com/)  
 [lodash - функциональная библиотека](https://lodash.com/)  
+[ramda - функциональная библиотека](https://ramdajs.com/)  
 [WebStorm](https://www.jetbrains.com/ru-ru/webstorm/)  
 
 ```js
