@@ -4,7 +4,7 @@ const cloneDeep = (obj) => {
         if (typeof(obj[key]) === 'object') {
             result[key] = cloneDeep(obj[key]);
         }
-        result[key] = obj[key];
+        else result[key] = obj[key];
     }
     return result;
 }
