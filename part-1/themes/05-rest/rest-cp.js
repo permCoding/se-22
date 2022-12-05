@@ -1,22 +1,34 @@
 const http = require("http");
+const { about, get_files_filter } = require('./module');
 
 const server = http.createServer();
 const port = 3000;
 
-/*
-    /
-    /json
-    /csv
-*/
-
 let callback = (request, response) => {
     let args = request.url.split('/');
     response.setHeader('Content-Type', 'text/plain; charset=utf-8');
-    // args.length
-    response.write(args[1] + '\n');
-    response.write(args[2] + '\n');
-    let about = require('./about.json');
-    response.write(JSON.stringify(about, null, 4));
+    console.log(args.length);
+    switch (args.length) {
+        case 1, 2:
+            about(response);
+            break;
+        case 3:  // *******/json
+            let files =  get_files_filter('./', args[1]);
+            response.write(files.join('\n'));
+            break;
+        case 4: // *******/json/abiturs.csv/
+            //
+            response.write('/json/abiturs.csv/');
+            break;
+        case 5: // *******/json/abiturs.csv/?rating=desc&name=asc
+            //
+            response.write('/json/abiturs.csv/?rating=desc&name=asc');
+            break;
+        default:
+            response.statusCode = 404;
+            response.write('Запрос ошибочный...');
+            break;
+    }
     response.end();
 }
 
