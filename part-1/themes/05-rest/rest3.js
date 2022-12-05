@@ -8,7 +8,7 @@ const get_csv_files = (filter) => {
     return [`${filter}/users.csv`, `${filter}/abc.csv`, `${filter}/sorted.csv`];
 }
 
-// http://localhost:3000/users.csv?name&age&group
+// http://localhost:3000/users.csv/?name=asc&age=desc
 
 let callback = (request, response) => {
     let req = request.url; // todo маршрутизация
