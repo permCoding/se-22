@@ -10,9 +10,11 @@ const port = 3000;
 */
 
 let callback = (request, response) => {
-    let req = request.url;
-    let args = req.split('/');
-    response.write(args.join(' / '));
+    let args = request.url.split('/');
+    response.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    // args.length
+    response.write(args[1] + '\n');
+    response.write(args[2] + '\n');
     let about = require('./about.json');
     response.write(JSON.stringify(about, null, 4));
     response.end();
