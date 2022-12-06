@@ -5,7 +5,6 @@ class WorkData {
     }
     constructor(file_name) {
         this._json = require(file_name);
-        console.log(this._json);
     }
     orderBy(fields, directs) {
         // тут добавить рекурсивную сортировку по параметрам
