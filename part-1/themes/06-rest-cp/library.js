@@ -1,5 +1,5 @@
 class WorkData {
-    _json; // данные считанные из файла
+    // _json; // данные считанные из файла
     get json() {
         return this._json;
     }

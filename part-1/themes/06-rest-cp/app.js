@@ -12,7 +12,7 @@ let select_case = (args, response) => {
                 about(response);
                 break;
             case 2: // http://localhost:3000/json или http://localhost:3000/csv
-                let files =  get_files_filter('./', args[1]);
+                let files =  get_files_filter('./public/', args[1]);
                 response.write(files.join('\n'));
                 break;
             case 3: // http://localhost:3000/json/users.json
