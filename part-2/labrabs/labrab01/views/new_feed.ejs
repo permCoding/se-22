@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css" />
+    <link rel="shortcut icon" href="../public/images/favicon.ico" />
+</head>
+<body>
+    <div class="wrapper">
+    <div class="content">
+        <%- include("./header.html") %>
+        <div class="desktop">
+            <br>
+            <h4><%= tableName %></h4>
+            <form action="/new_feed" method="post"> <!-- вызов события /new_feed -->
+                <input class="txt" name="userName" type="name" placeholder="Ваше имя">
+                <textarea class="txtarea" name="userFeed" placeholder="Ваш отзыв"></textarea>
+                <button class="send">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+    <%- include("./footer.html") %>
+    </div>
+</body>
+</html>
