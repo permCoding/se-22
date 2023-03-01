@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "firstName": "Женя",
+    "lastName": "Мишкин",
+    "rating": 217,
+    "city": "Кунгур"
+  },
+  {
+    "id": 2,
+    "firstName": "Роман",
+    "lastName": "Бортич",
+    "rating": 224,
+    "city": "Лысьва"
+  },
+  {
+    "id": 3,
+    "firstName": "Оксана",
+    "lastName": "Деревянко",
+    "rating": 186,
+    "city": "Оса"
+  },
+  {
+    "id": 4,
+    "firstName": "Анна",
+    "lastName": "Столбова",
+    "rating": 194,
+    "city": "Кунгур"
+  },
+  {
+    "id": 5,
+    "firstName": "Женя",
+    "lastName": "Хомич",
+    "rating": 205,
+    "city": "Кунгур"
+  },
+  {
+    "id": 6,
+    "firstName": "Коля",
+    "lastName": "Круглов",
+    "rating": 191,
+    "city": "Березники"
+  },
+  {
+    "id": 7,
+    "firstName": "Иван",
+    "lastName": "Иванов",
+    "rating": 192,
+    "city": "Кунгур"
+  },
+  {
+    "id": 8,
+    "firstName": "Петя",
+    "lastName": "Петров",
+    "rating": 191,
+    "city": "Кунгур"
+  },
+  {
+    "id": 9,
+    "firstName": "Женя",
+    "lastName": "Сидоров",
+    "rating": 196,
+    "city": "Кунгур"
+  },
+  {
+    "id": 10,
+    "firstName": "Егор",
+    "lastName": "Капустин",
+    "rating": 196,
+    "city": "Кунгур"
+  },
+  {
+    "id": 11,
+    "firstName": "Алиса",
+    "lastName": "Томатова",
+    "rating": 201,
+    "city": "Кунгур"
+  },
+  {
+    "id": 12,
+    "firstName": "Клава",
+    "lastName": "Ежова",
+    "rating": 214,
+    "city": "Лысьва"
+  },
+  {
+    "id": 13,
+    "firstName": "Женя",
+    "lastName": "Микова",
+    "rating": 222,
+    "city": "Пермь"
+  },
+  {
+    "id": 14,
+    "firstName": "Иаков",
+    "lastName": "Мамин",
+    "rating": 199,
+    "city": "Пермь"
+  },
+  {
+    "id": 15,
+    "firstName": "Стёпа",
+    "lastName": "Комов",
+    "rating": 196,
+    "city": "Пермь"
+  },
+  {
+    "id": 16,
+    "firstName": "Николай",
+    "lastName": "Ляскин",
+    "rating": 192,
+    "city": "Оса"
+  },
+  {
+    "id": 17,
+    "firstName": "Андрей",
+    "lastName": "Коробкин",
+    "rating": 220,
+    "city": "Пермь"
+  }
+]
