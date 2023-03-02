@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+    <!-- заголовок поменять на заглавные буквы -->
+    <h3>{{change header}}</h3>
+
+    <table>
+
+        <tr>
+            <th>{{lang}}</th>
+            <th>{{lean}}</th>
+            <th>{{lev}}</th>
+        </tr>
+
+        {{#each data}}
+            <tr {{#if (check this.isLearning)}} class="false" {{/if}}>
+                <td>{{this.lang}}</td>
+                <td>{{this.isLearning}}</td>
+                <td>{{this.level}}</td>
+            </tr>
+        {{/each}}
+        
+    </table>
+</body>
+<html>

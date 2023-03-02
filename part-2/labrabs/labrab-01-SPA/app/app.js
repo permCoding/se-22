@@ -2,7 +2,6 @@
 const express = require("express");
 
 const app = express(); // создадим объект приложения
-// app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static('public'));
 app.set("view engine", "hbs"); // подключим движок для рендеринга
 

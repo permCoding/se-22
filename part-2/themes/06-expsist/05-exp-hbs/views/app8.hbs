@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+    <h3>Поля объекта</h1>
+    <table>
+
+        <tr>
+            <th>{{fields.lang}}</th>
+            <th>{{fields.lean}}</th>
+            <th>{{fields.lev}}</th>
+        </tr>
+
+        {{#each data}}
+            <tr>
+                <td>{{this.lang}}</td>
+                <td>{{this.isLearning}}</td>
+                <td>{{this.level}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+<html>
