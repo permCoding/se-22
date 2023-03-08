@@ -1,5 +1,5 @@
-const request = require('sync-request'); // npm i sync-request
-const cheerio = require('cheerio'); // https://cheerio.js.org/docs/intro
+const request = require('sync-request');
+const cheerio = require('cheerio');
 
 let url = "https://pcoding.ru/darkNet.php";
 let ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
@@ -14,8 +14,9 @@ for (let elm of links) { // вывести ссылки и текст
 }
 
 /*
+https://cheerio.js.org/docs/intro
 сначала получить всю страницу
-зетем выбрать из неё нужные данные
+затем выбрать из неё все ссылки на документы и их названия
 
 <a class="links" href="https://pcoding.ru/pdf/AgroRobot.pdf" target="_blank">
     AgroRobot.pdf

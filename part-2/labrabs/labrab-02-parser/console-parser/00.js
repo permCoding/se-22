@@ -8,9 +8,10 @@ let html = res.getBody('utf8');
 console.log(html);
 
 /*
+общая задача:
 сначала получить всю страницу
-зетем выбрать из неё нужные данные
-
+затем выбрать из неё нужные данные
+будем выбирать ссылки на pdf-документы
 <a class="links" href="https://pcoding.ru/pdf/AgroRobot.pdf" target="_blank">
     AgroRobot.pdf
 </a>

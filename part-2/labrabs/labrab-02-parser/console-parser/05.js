@@ -1,5 +1,5 @@
-const request = require('sync-request'); // npm i sync-request
-const cheerio = require('cheerio'); // https://cheerio.js.org/docs/intro
+const request = require('sync-request');
+const cheerio = require('cheerio');
 
 const get_html = (url) => {
     let ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
@@ -29,10 +29,11 @@ let html = get_html(url);
 let arr = get_data();
 arr.map(e => console.log(e));
 
-/*
-сначала получить всю страницу
-зетем выбрать из неё нужные данные
-
+/* 
+https://cheerio.js.org/docs/intro
+сначала получить всю страницу и затем выбрать из неё нужные данные
+оформим всё в виде функций и возвращать будем массив объектов
+используя метод each()
 <a class="links" href="https://pcoding.ru/pdf/AgroRobot.pdf" target="_blank">
     AgroRobot.pdf
 </a>
