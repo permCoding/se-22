@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <h3>Список документов, сортировка по полю: {{field}}</h1>
+    <table class="abiturs">
+        <tr>
+            <th>№</th>
+            <th>Название документа</th>
+            <th>Ссылка на документ</th>
+        </tr>
+        <!-- это цикл по массиву объектов -->
+        {{#each arr}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.href}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>
