@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
                 let obj = {'id':i+1, 'title':title, 'href':href};
                 arr.push(obj);
             });
-            // arr = arr.filter(obj => obj.href.slice(-4)==='.pdf');
+            arr = arr.filter(obj => obj.href.slice(-4)==='.pdf');
             let model = { // сформируем модель данных
                 "title": "Документы",
                 "field": "id", // тут поле, по которому сортировка
