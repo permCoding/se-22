@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    <center>
+    <h3>Список документов, сортировка по полю: {{type}}</h3>
+    <br>
+    <form method="get" id="form-select" action="get-data">
+        <select class="select" name="select">
+            <option name="data0" value="0" selected>по возрастанию Номера</option>
+            <option name="data1" value="1">по убыванию Номера</option>
+            <option name="data2" value="2">по возрастанию Названия</option>
+            <option name="data3" value="3">по убыванию Названия</option>
+        </select>
+    </form>
+    <table class="abiturs">
+        <tr>
+            <th>№</th>
+            <th>Название документа</th>
+            <th>ссылка на документ</th>
+        </tr>
+        <!-- это цикл по массиву объектов -->
+        {{#each arr}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.href}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>

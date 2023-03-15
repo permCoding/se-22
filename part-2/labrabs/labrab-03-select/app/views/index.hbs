@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <h3>Документы отсортированы по полю: {{field}}</h3>
+    <form method="post" action="sorted">
+        <table class="select">
+        <tr>
+            <td class="list-td">
+                <select class="select-direct" name="direct">
+                    <option value="-1">Выберите направление сортировки</option>
+                    <option value="0">по возрастанию Номера</option>
+                    <option value="1">по убыванию Номера</option>
+                    <option value="2">по возрастанию Названия</option>
+                    <option value="3">по убыванию Названия</option>
+                </select>
+            </td>
+            <td class="list-td">
+                <button class="send">Отсортировать</button>
+            </td>
+        </tr>
+        </table>
+    </form>
+
+    <table class="list">
+        <tr>
+            <th>№</th>
+            <th>Название документа</th>
+            <th>ссылка на документ</th>
+        </tr>
+        <!-- это цикл по массиву объектов -->
+        {{#each arr}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.href}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>
