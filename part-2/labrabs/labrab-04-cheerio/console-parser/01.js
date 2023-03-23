@@ -6,8 +6,18 @@ let ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 let res = request('GET', url, { headers: {'user-agent': ua} });
 let html = res.getBody('utf8');
 
+// let tag = `
+// <head>
+//     <title>
+//         ksdhbsjhvfjsvfj
+//     </title>
+// </head>`;
+// let $ = cheerio.load(tag);
+// let obj = $('head');
+// console.log(obj.html());
+
 let $ = cheerio.load(html); // объект для парсинга данных
-let links = $("a") // получить все ссылки
+let links = $("a"); // получить все ссылки
 
 for (let elm of links) { // вывести все на экран
     console.log($(elm).attr('href'));

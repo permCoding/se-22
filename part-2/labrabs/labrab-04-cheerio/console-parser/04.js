@@ -2,7 +2,8 @@ const request = require('sync-request');
 const cheerio = require('cheerio');
 
 const get_html = (url) => {
-    let ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
+    let ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) \
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
     let res = request('GET', url, { headers: {'user-agent': ua} });
     let html = res.getBody('utf8');
     return html;    
@@ -13,9 +14,12 @@ const get_data = () => {
     let links = $("a.links") // получить все ссылки класса links
     let results = [];
     for (let elm of links) { // сформировать массив объектов
-        let href = $(elm).attr('href');
-        let title = $(elm).text();
-        results.push({"title":title,"href":href});
+        results.push(
+            {
+                "title": $(elm).text(),
+                "href": $(elm).attr('href')
+            }
+        );
     }
     return results;
 }

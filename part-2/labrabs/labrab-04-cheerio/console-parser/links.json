@@ -1,452 +1,362 @@
 [
     {
         "id": 1,
-        "title": "AgroRobot.pdf",
-        "href": "https://pcoding.ru/pdf/AgroRobot.pdf"
+        "title": "AgroRobot.pdf"
     },
     {
         "id": 2,
-        "title": "algo.pdf",
-        "href": "https://pcoding.ru/pdf/algo.pdf"
+        "title": "algo.pdf"
     },
     {
         "id": 3,
-        "title": "Algorithms_and_data_structures.pdf",
-        "href": "https://pcoding.ru/pdf/Algorithms_and_data_structures.pdf"
+        "title": "Algorithms_and_data_structures.pdf"
     },
     {
         "id": 4,
-        "title": "backpack.pdf",
-        "href": "https://pcoding.ru/pdf/backpack.pdf"
+        "title": "backpack.pdf"
     },
     {
         "id": 5,
-        "title": "CourseProject.pdf",
-        "href": "https://pcoding.ru/pdf/CourseProject.pdf"
+        "title": "CourseProject.pdf"
     },
     {
         "id": 6,
-        "title": "CSharpHelp.pdf",
-        "href": "https://pcoding.ru/pdf/CSharpHelp.pdf"
+        "title": "CSharpHelp.pdf"
     },
     {
         "id": 7,
-        "title": "CSharpJunior.pdf",
-        "href": "https://pcoding.ru/pdf/CSharpJunior.pdf"
+        "title": "CSharpJunior.pdf"
     },
     {
         "id": 8,
-        "title": "CSharpMySQL.pdf",
-        "href": "https://pcoding.ru/pdf/CSharpMySQL.pdf"
+        "title": "CSharpMySQL.pdf"
     },
     {
         "id": 9,
-        "title": "CSharpOOP.pdf",
-        "href": "https://pcoding.ru/pdf/CSharpOOP.pdf"
+        "title": "CSharpOOP.pdf"
     },
     {
         "id": 10,
-        "title": "demo-ege-2022.pdf",
-        "href": "https://pcoding.ru/pdf/demo-ege-2022.pdf"
+        "title": "demo-ege-2022.pdf"
     },
     {
         "id": 11,
-        "title": "dinamic.pdf",
-        "href": "https://pcoding.ru/pdf/dinamic.pdf"
+        "title": "dinamic.pdf"
     },
     {
         "id": 12,
-        "title": "ES_CSharp.pdf",
-        "href": "https://pcoding.ru/pdf/ES_CSharp.pdf"
+        "title": "ES_CSharp.pdf"
     },
     {
         "id": 13,
-        "title": "gis.pdf",
-        "href": "https://pcoding.ru/pdf/gis.pdf"
+        "title": "gis.pdf"
     },
     {
         "id": 14,
-        "title": "IT-Hackathon.pdf",
-        "href": "https://pcoding.ru/pdf/IT-Hackathon.pdf"
+        "title": "IT-Hackathon.pdf"
     },
     {
         "id": 15,
-        "title": "IT-HackathonOld.pdf",
-        "href": "https://pcoding.ru/pdf/IT-HackathonOld.pdf"
+        "title": "IT-HackathonOld.pdf"
     },
     {
         "id": 16,
-        "title": "IT-Hackathon_.pdf",
-        "href": "https://pcoding.ru/pdf/IT-Hackathon_.pdf"
+        "title": "IT-Hackathon_.pdf"
     },
     {
         "id": 17,
-        "title": "ITschool.pdf",
-        "href": "https://pcoding.ru/pdf/ITschool.pdf"
+        "title": "ITschool.pdf"
     },
     {
         "id": 18,
-        "title": "jsFuncCoding.pdf",
-        "href": "https://pcoding.ru/pdf/jsFuncCoding.pdf"
+        "title": "jsFuncCoding.pdf"
     },
     {
         "id": 19,
-        "title": "jsManual.pdf",
-        "href": "https://pcoding.ru/pdf/jsManual.pdf"
+        "title": "jsManual.pdf"
     },
     {
         "id": 20,
-        "title": "labrabParsing.pdf",
-        "href": "https://pcoding.ru/pdf/labrabParsing.pdf"
+        "title": "labrabParsing.pdf"
     },
     {
         "id": 21,
-        "title": "Lazarus.pdf",
-        "href": "https://pcoding.ru/pdf/Lazarus.pdf"
+        "title": "Lazarus.pdf"
     },
     {
         "id": 22,
-        "title": "mag_01.pdf",
-        "href": "https://pcoding.ru/pdf/mag_01.pdf"
+        "title": "mag_01.pdf"
     },
     {
         "id": 23,
-        "title": "mag_02.pdf",
-        "href": "https://pcoding.ru/pdf/mag_02.pdf"
+        "title": "mag_02.pdf"
     },
     {
         "id": 24,
-        "title": "mag_03.pdf",
-        "href": "https://pcoding.ru/pdf/mag_03.pdf"
+        "title": "mag_03.pdf"
     },
     {
         "id": 25,
-        "title": "olymp_18_tren.pdf",
-        "href": "https://pcoding.ru/pdf/olymp_18_tren.pdf"
+        "title": "olymp_18_tren.pdf"
     },
     {
         "id": 26,
-        "title": "Pascal_Intensive.pdf",
-        "href": "https://pcoding.ru/pdf/Pascal_Intensive.pdf"
+        "title": "Pascal_Intensive.pdf"
     },
     {
         "id": 27,
-        "title": "Prolog.pdf",
-        "href": "https://pcoding.ru/pdf/Prolog.pdf"
+        "title": "Prolog.pdf"
     },
     {
         "id": 28,
-        "title": "PythonJunior.pdf",
-        "href": "https://pcoding.ru/pdf/PythonJunior.pdf"
+        "title": "PythonJunior.pdf"
     },
     {
         "id": 29,
-        "title": "readmeHosting.pdf",
-        "href": "https://pcoding.ru/pdf/readmeHosting.pdf"
+        "title": "readmeHosting.pdf"
     },
     {
         "id": 30,
-        "title": "shareGit.pdf",
-        "href": "https://pcoding.ru/pdf/shareGit.pdf"
+        "title": "shareGit.pdf"
     },
     {
         "id": 31,
-        "title": "Small_Basic.pdf",
-        "href": "https://pcoding.ru/pdf/Small_Basic.pdf"
+        "title": "Small_Basic.pdf"
     },
     {
         "id": 32,
-        "title": "sort.pdf",
-        "href": "https://pcoding.ru/pdf/sort.pdf"
+        "title": "sort.pdf"
     },
     {
         "id": 33,
-        "title": "speedCoding.pdf",
-        "href": "https://pcoding.ru/pdf/speedCoding.pdf"
+        "title": "speedCoding.pdf"
     },
     {
         "id": 34,
-        "title": "SpeedCodingRules.pdf",
-        "href": "https://pcoding.ru/pdf/SpeedCodingRules.pdf"
+        "title": "SpeedCodingRules.pdf"
     },
     {
         "id": 35,
-        "title": "VBA.pdf",
-        "href": "https://pcoding.ru/pdf/VBA.pdf"
+        "title": "VBA.pdf"
     },
     {
         "id": 36,
-        "title": "ВвПрИнж-Лабораторный_практикум.pdf",
-        "href": "https://pcoding.ru/pdf/ВвПрИнж-Лабораторный_практикум.pdf"
+        "title": "ВвПрИнж-Лабораторный_практикум.pdf"
     },
     {
         "id": 37,
-        "title": "Консольные-приложения.pdf",
-        "href": "https://pcoding.ru/pdf/Консольные-приложения.pdf"
+        "title": "Консольные-приложения.pdf"
     },
     {
         "id": 38,
-        "title": "Контрольная-Работа-АИСД.pdf",
-        "href": "https://pcoding.ru/pdf/Контрольная-Работа-АИСД.pdf"
+        "title": "Контрольная-Работа-АИСД.pdf"
     },
     {
         "id": 39,
-        "title": "триады.pdf",
-        "href": "https://pcoding.ru/pdf/триады.pdf"
+        "title": "триады.pdf"
     },
     {
         "id": 40,
-        "title": "opisProg.doc",
-        "href": "https://pcoding.ru/gost/opisProg.doc"
+        "title": "opisProg.doc"
     },
     {
         "id": 41,
-        "title": "textProg.doc",
-        "href": "https://pcoding.ru/gost/textProg.doc"
+        "title": "textProg.doc"
     },
     {
         "id": 42,
-        "title": "opisPrim.doc",
-        "href": "https://pcoding.ru/gost/opisPrim.doc"
+        "title": "opisPrim.doc"
     },
     {
         "id": 43,
-        "title": "idef0.pdf",
-        "href": "https://pcoding.ru/gost/idef0.pdf"
+        "title": "idef0.pdf"
     },
     {
         "id": 44,
-        "title": "dfd.pdf",
-        "href": "https://pcoding.ru/gost/dfd.pdf"
+        "title": "dfd.pdf"
     },
     {
         "id": 45,
-        "title": "idef0en.pdf",
-        "href": "https://pcoding.ru/gost/idef0en.pdf"
+        "title": "idef0en.pdf"
     },
     {
         "id": 46,
-        "title": "VKR_zadanie.docx",
-        "href": "https://pcoding.ru/gost/VKR_zadanie.docx"
+        "title": "VKR_zadanie.docx"
     },
     {
         "id": 47,
-        "title": "VKR_oglavlenie.docx",
-        "href": "https://pcoding.ru/gost/VKR_oglavlenie.docx"
+        "title": "VKR_oglavlenie.docx"
     },
     {
         "id": 48,
-        "title": "VKR_metod_posobie.docx",
-        "href": "https://pcoding.ru/gost/VKR_metod_posobie.docx"
+        "title": "VKR_metod_posobie.docx"
     },
     {
         "id": 49,
-        "title": "VKR_perechen_slaydov.doc",
-        "href": "https://pcoding.ru/gost/VKR_perechen_slaydov.doc"
+        "title": "VKR_perechen_slaydov.doc"
     },
     {
         "id": 50,
-        "title": "fgos_090303.pdf",
-        "href": "https://pcoding.ru/gost/fgos_090303.pdf"
+        "title": "fgos_090303.pdf"
     },
     {
         "id": 51,
-        "title": "MAG_Otchet_po_nir_prim.docx",
-        "href": "https://pcoding.ru/gost/MAG_Otchet_po_nir_prim.docx"
+        "title": "MAG_Otchet_po_nir_prim.docx"
     },
     {
         "id": 52,
-        "title": "titulUP.docx",
-        "href": "https://pcoding.ru/gost/titulUP.docx"
+        "title": "titulUP.docx"
     },
     {
         "id": 53,
-        "title": "VKR_otchet_prakt_18.docx",
-        "href": "https://pcoding.ru/gost/VKR_otchet_prakt_18.docx"
+        "title": "VKR_otchet_prakt_18.docx"
     },
     {
         "id": 54,
-        "title": "Dreamspark.docx",
-        "href": "https://pcoding.ru/gost/Dreamspark.docx"
+        "title": "Dreamspark.docx"
     },
     {
         "id": 55,
-        "title": "PISA_2015_results_short_report.pdf",
-        "href": "https://pcoding.ru/gost/PISA_2015_results_short_report.pdf"
+        "title": "PISA_2015_results_short_report.pdf"
     },
     {
         "id": 56,
-        "title": "Программа_Цифровая_экономика.pdf",
-        "href": "https://pcoding.ru/gost/Программа_Цифровая_экономика.pdf"
+        "title": "Программа_Цифровая_экономика.pdf"
     },
     {
         "id": 57,
-        "title": "ПИнб.pdf",
-        "href": "https://pcoding.ru/gost/ПИнб.pdf"
+        "title": "ПИнб.pdf"
     },
     {
         "id": 58,
-        "title": "ПИб.pdf",
-        "href": "https://pcoding.ru/gost/ПИб.pdf"
+        "title": "ПИб.pdf"
     },
     {
         "id": 59,
-        "title": "DFD-example.pdf",
-        "href": "https://pcoding.ru/gost/DFD-example.pdf"
+        "title": "DFD-example.pdf"
     },
     {
         "id": 60,
-        "title": "VKR-presentation.pptx",
-        "href": "https://pcoding.ru/gost/VKR-presentation.pptx"
+        "title": "VKR-presentation.pptx"
     },
     {
         "id": 61,
-        "title": "idef3.pdf",
-        "href": "https://pcoding.ru/gost/idef3.pdf"
+        "title": "idef3.pdf"
     },
     {
         "id": 62,
-        "title": "ГОСТ_на_научный_отчет_7.32_2017.pdf",
-        "href": "https://pcoding.ru/gost/ГОСТ_на_научный_отчет_7.32_2017.pdf"
+        "title": "ГОСТ_на_научный_отчет_7.32_2017.pdf"
     },
     {
         "id": 63,
-        "title": "GOST_19.401-78_ТекстПрогр.pdf",
-        "href": "https://pcoding.ru/gost/GOST_19.401-78_ТекстПрогр.pdf"
+        "title": "GOST_19.401-78_ТекстПрогр.pdf"
     },
     {
         "id": 64,
-        "title": "GOST_19.701-90_Алгоритмы.pdf",
-        "href": "https://pcoding.ru/gost/GOST_19.701-90_Алгоритмы.pdf"
+        "title": "GOST_19.701-90_Алгоритмы.pdf"
     },
     {
         "id": 65,
-        "title": "GOST_34_602-89_ТехЗад.pdf",
-        "href": "https://pcoding.ru/gost/GOST_34_602-89_ТехЗад.pdf"
+        "title": "GOST_34_602-89_ТехЗад.pdf"
     },
     {
         "id": 66,
-        "title": "ГОСТ_ИКТ_в_образовании.pdf",
-        "href": "https://pcoding.ru/gost/ГОСТ_ИКТ_в_образовании.pdf"
+        "title": "ГОСТ_ИКТ_в_образовании.pdf"
     },
     {
         "id": 67,
-        "title": "idef3_example.pdf",
-        "href": "https://pcoding.ru/gost/idef3_example.pdf"
+        "title": "idef3_example.pdf"
     },
     {
         "id": 68,
-        "title": "Idef3-en.pdf",
-        "href": "https://pcoding.ru/gost/Idef3-en.pdf"
+        "title": "Idef3-en.pdf"
     },
     {
         "id": 69,
-        "title": "VKR_otchet_prakt_20.pdf",
-        "href": "https://pcoding.ru/gost/VKR_otchet_prakt_20.pdf"
+        "title": "VKR_otchet_prakt_20.pdf"
     },
     {
         "id": 70,
-        "title": "GOST_51583_2014_ПорядокСоздАС.pdf",
-        "href": "https://pcoding.ru/gost/GOST_51583_2014_ПорядокСоздАС.pdf"
+        "title": "GOST_51583_2014_ПорядокСоздАС.pdf"
     },
     {
         "id": 71,
-        "title": "help_CSharp.txt",
-        "href": "https://pcoding.ru/help/help_CSharp.txt"
+        "title": "help_CSharp.txt"
     },
     {
         "id": 72,
-        "title": "help_IDE.txt",
-        "href": "https://pcoding.ru/help/help_IDE.txt"
+        "title": "help_IDE.txt"
     },
     {
         "id": 73,
-        "title": "help_Olymp.txt",
-        "href": "https://pcoding.ru/help/help_Olymp.txt"
+        "title": "help_Olymp.txt"
     },
     {
         "id": 74,
-        "title": "idef0.txt",
-        "href": "https://pcoding.ru/help/idef0.txt"
+        "title": "idef0.txt"
     },
     {
         "id": 75,
-        "title": "list_of programs.txt",
-        "href": "https://pcoding.ru/help/list_of programs.txt"
+        "title": "list_of programs.txt"
     },
     {
         "id": 76,
-        "title": "MyMess.rar",
-        "href": "https://pcoding.ru/download/MyMess.rar"
+        "title": "MyMess.rar"
     },
     {
         "id": 77,
-        "title": "game11.rar",
-        "href": "https://pcoding.ru/download/game11.rar"
+        "title": "game11.rar"
     },
     {
         "id": 78,
-        "title": "speak.vbs",
-        "href": "https://pcoding.ru/download/speak.vbs"
+        "title": "speak.vbs"
     },
     {
         "id": 79,
-        "title": "Animal.exe",
-        "href": "https://pcoding.ru/download/Animal.exe"
+        "title": "Animal.exe"
     },
     {
         "id": 80,
-        "title": "SmallBasicLibrary.dll",
-        "href": "https://pcoding.ru/download/SmallBasicLibrary.dll"
+        "title": "SmallBasicLibrary.dll"
     },
     {
         "id": 81,
-        "title": "MySql.Data.dll",
-        "href": "https://pcoding.ru/download/MySql.Data.dll"
+        "title": "MySql.Data.dll"
     },
     {
         "id": 82,
-        "title": "MessagingToolkit.QRCode.dll",
-        "href": "https://pcoding.ru/download/MessagingToolkit.QRCode.dll"
+        "title": "MessagingToolkit.QRCode.dll"
     },
     {
         "id": 83,
-        "title": "messPib.rar",
-        "href": "https://pcoding.ru/download/messPib.rar"
+        "title": "messPib.rar"
     },
     {
         "id": 84,
-        "title": "VSColorThemes.zip",
-        "href": "https://pcoding.ru/download/VSColorThemes.zip"
+        "title": "VSColorThemes.zip"
     },
     {
         "id": 85,
-        "title": "-TEST-.zip",
-        "href": "https://pcoding.ru/download/-TEST-.zip"
+        "title": "-TEST-.zip"
     },
     {
         "id": 86,
-        "title": "ПИб.pdf",
-        "href": "https://pcoding.ru/download/ПИб.pdf"
+        "title": "ПИб.pdf"
     },
     {
         "id": 87,
-        "title": "ПИнб.pdf",
-        "href": "https://pcoding.ru/download/ПИнб.pdf"
+        "title": "ПИнб.pdf"
     },
     {
         "id": 88,
-        "title": "players_multi.rar",
-        "href": "https://pcoding.ru/download/players_multi.rar"
+        "title": "players_multi.rar"
     },
     {
         "id": 89,
-        "title": "extendeddotnet.controls.dll",
-        "href": "https://pcoding.ru/download/extendeddotnet.controls.dll"
+        "title": "extendeddotnet.controls.dll"
     },
     {
         "id": 90,
-        "title": "redaktor.rar",
-        "href": "https://pcoding.ru/download/redaktor.rar"
+        "title": "redaktor.rar"
     }
 ]

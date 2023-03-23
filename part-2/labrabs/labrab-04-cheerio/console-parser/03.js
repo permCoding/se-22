@@ -18,7 +18,10 @@ https://cheerio.js.org/docs/intro
 сначала получить всю страницу
 затем выбрать из неё все ссылки КЛАССА links на документы и их названия
 
+<a href="https://pcoding.ru/">НА ГЛАВНУЮ</a>
+
 <a class="links" href="https://pcoding.ru/pdf/AgroRobot.pdf" target="_blank">
     AgroRobot.pdf
 </a>
+
 */

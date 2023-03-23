@@ -27,7 +27,7 @@ const get_data = (html) => {
 let url = "https://pcoding.ru/darkNet.php";
 let html = get_html(url);
 let arr = get_data(html);
-let str = JSON.stringify(arr, null, 4);
+let str = JSON.stringify(arr, ['id','title'], 4);
 require('fs').writeFileSync('./links.json', str);
 
 /*
