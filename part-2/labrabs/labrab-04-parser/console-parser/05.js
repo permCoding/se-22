@@ -27,7 +27,10 @@ const get_data = () => {
 let url = "https://pcoding.ru/darkNet.php";
 let html = get_html(url);
 let arr = get_data();
-arr.map(e => console.log(e));
+arr
+    .sort((a,b) => a.title>b.title? +1: -1)
+    .slice(0, 5)
+    .map(e => console.log(e));
 
 /* 
 https://cheerio.js.org/docs/intro
