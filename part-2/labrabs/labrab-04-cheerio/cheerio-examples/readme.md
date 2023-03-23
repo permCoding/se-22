@@ -7,6 +7,7 @@ https://cheerio.js.org/docs/intro
 https://cheerio.js.org/docs/basics/selecting  
 https://cheerio.js.org/docs/basics/traversing  
 https://cheerio.js.org/docs/basics/manipulation  
+https://russianblogs.com/article/3349437160/  
 
 ---  
 
