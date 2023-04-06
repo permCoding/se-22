@@ -1,6 +1,6 @@
 const sqlite = require('sqlite-sync')
 
-let get_records = (count) => {
+let get_data = (count) => {
     sqlite.connect('prods.db')
     let sql_select = `
         SELECT title, price 
@@ -9,17 +9,15 @@ let get_records = (count) => {
         ORDER BY price DESC 
         LIMIT ${count}
     `
-    let recs = sqlite.run(sql_select)
+    let select = sqlite.run(sql_select)
     sqlite.close()
-    return recs    
+    return select[0]    
 }
 
 console.clear()
-count = 5
-console.log(`count - ${count}`)
-let recs = get_records(count)
-let columns = recs[0].columns
-let values = recs[0].values
-for (let rec of values) {
-    console.log(...rec.reverse())
-}
+let count = 10
+console.log(`count = ${count}`)
+let data = get_data(count)
+// let columns = data.columns
+let values = data.values
+values.forEach((e,i) => console.log(i+1, e[1], e[0].substring(0, 30)));
