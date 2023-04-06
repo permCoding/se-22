@@ -6,11 +6,14 @@ const change = str => str.replace(/[\s|₽]+/g, '')
 
 sqlite.create_function(change)
 
-let sql_select = `SELECT title, change(price) as price FROM prods`
+let sql_select = `
+    SELECT title, change(price) as price 
+    FROM prods
+`
 
-let recs = sqlite.run(sql_select)
+let select = sqlite.run(sql_select)
 
-recs
+select
     .map((e, i) => Object.assign({'id':i+1}, e))
     .forEach(console.log)
 

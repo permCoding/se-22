@@ -5,8 +5,8 @@ sqlite.connect('prods.db')
 let sql_select = `
     SELECT title, CAST(price AS INTEGER) AS price 
     FROM prods
-    ORDER BY price ASC
-    LIMIT 5
+    ORDER BY price DESC
+    LIMIT 8
 `
 
 let recs = sqlite.run(sql_select)

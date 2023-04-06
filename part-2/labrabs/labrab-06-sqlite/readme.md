@@ -2,6 +2,10 @@
 
 Задания к лабораторной работе  
 Все программы консольные  
+редактор - DB Brower SQLite  
+для VS Code - расширения:  
+- SQLite Viewer  
+- SQLite  
 
 ---  
 
@@ -63,4 +67,19 @@ function delay(sek) {
 
 delay(1.5) // в секундах
 
+```
+
+Заготовка:  
+```js
+base_url = https://n-katalog.ru/
+cat = category/ssd-nakopiteli/list
+
+let all_prods = []
+let count = 10;
+for (let page = 1; page <= count; page++) {
+	params = `?page=${page}&sort=Popular&filterid=45ca8be2`
+	let url = base_url + cat + params
+	arr = get_prods_on_page(url)
+	// добавить arr в all_prods
+}
 ```

@@ -3,11 +3,11 @@ const sqlite = require('sqlite-sync')
 let get_records = (count) => {
     sqlite.connect('prods.db')
     // let sql_select = `
-        // SELECT title, price, price AS val 
-        // FROM prods 
-        // WHERE price <= 1800 AND price >= 1000
-        // ORDER BY price DESC, val DESC
-        // LIMIT ${count}
+    //     SELECT title, price, price AS val 
+    //     FROM prods 
+    //     WHERE price <= 1800 AND price >= 1000
+    //     ORDER BY price DESC, val DESC
+    //     LIMIT ${count}
     // `
     let sql_select = `
         SELECT title, price, CAST(substr(title, 0, instr(title, ' ')) AS INTEGER) AS val 

@@ -11,9 +11,10 @@ let prod = {
 
 // let sql_insert = "INSERT INTO prods VALUES(?, ?, ?, ?);"
 
-sqlite.insert('prods', prod, (res) => { 
-    if (res.error) throw res.error;
-    console.log(res);
-})
+sqlite.insert('prods', prod)
+
+// sqlite.insert('prods', prod, (res) => { 
+//     if (res.error) throw res.error;
+// })
 
 sqlite.close()

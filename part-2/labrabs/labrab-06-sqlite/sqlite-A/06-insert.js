@@ -16,6 +16,7 @@ let sql_insert = `
     VALUES('${title}','${href}','${price}','${stores}')
 `
 console.log(sql_insert)
+
 sqlite.run(sql_insert)
 
 sqlite.close()
