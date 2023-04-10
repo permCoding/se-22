@@ -4,11 +4,17 @@ sqlite.connect('prods.db')
 
 let sql_select = `SELECT title, price FROM prods`
 
-let recs = sqlite.run(sql_select)
+let select = sqlite.run(sql_select)
 
-recs
-    // .map((e,i) => { e.id = i+1; return e })
-    .map((e, i) => Object.assign({'id':i+1}, e))
-    .forEach(console.log)
+console.clear()
+
+// объекты сделать с id
+for (let i=0; i<select.length; i++) {
+    // ver 1
+    // select[i].id = i+1
+    // console.log(select[i])
+    // ver 2
+    console.log(Object.assign({'id':i+1}, select[i]))
+}
 
 sqlite.close()
