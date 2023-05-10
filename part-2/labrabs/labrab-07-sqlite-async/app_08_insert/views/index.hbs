@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Собаки</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <br>
+    <form action="/new" method="post">
+        <input class="txt" name="dog_name" type="text" placeholder="Кличка собаки" value="">
+        <input class="txt" name="color" type="text" placeholder="Цвет" value="">
+        <input class="txt" name="age" type="text" placeholder="Возраст" value="">
+        <button class="send">Добавить собаку</button>
+    </form>
+    <br>
+    <table class="list">
+        <tr>
+            <th width="8%">№</th>
+            <th>Кличка</th>
+            <th>Цвет</th>
+            <th width="15%">Возраст</th>
+            <th width="15%">Удалить</th>
+        </tr>
+        <!-- это цикл по массиву объектов -->
+        {{#each arr}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.dog_name}}</td>
+                <td>{{this.color}}</td>
+                <td>{{this.age}}</td>
+                <td>
+                    <a href="/del/{{this.id}}">Del</a>
+                    <a href="/del/{{this.id}}" onClick="return window.confirm('Удаляем?');">Del</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>

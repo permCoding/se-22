@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Собаки</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <table class="list">
+        <tr>
+            <th width="8%">№</th>
+            <th>Кличка</th>
+            <th>Цвет</th>
+            <th width="15%">Возраст</th>
+            <th width="15%">Удалить</th>
+        </tr>
+        <!-- это цикл по массиву объектов -->
+        {{#each arr}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.dog_name}}</td>
+                <td>{{this.color}}</td>
+                <td>{{this.age}}</td>
+                <td>
+                    <a href="/del/{{this.id}}">Del</a>
+                    <a href="/del/{{this.id}}" onClick="return window.confirm('Удаляем?');">Del</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>
