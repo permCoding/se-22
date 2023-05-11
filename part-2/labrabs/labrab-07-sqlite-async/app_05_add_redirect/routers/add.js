@@ -7,8 +7,7 @@ const add_dog = (req, res) => {
     (new sqlite3.Database('./private/shelter.db'))
         .run(query_insert, arr_values, (err) => {
             if (err) return console.error(err);
-            console.log(query_insert);
-            res.redirect('/');
+            res.redirect('/table');
         })
         .close();
 }

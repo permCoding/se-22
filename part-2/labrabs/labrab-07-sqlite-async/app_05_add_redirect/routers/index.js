@@ -23,7 +23,7 @@ const render_table_sorted = (req, res) => {
         .close();
 }
 
-router.get('/', render_table);
+router.get(['/','/table'], render_table);
 router.get('/sorted', render_table_sorted);
 
 module.exports = router;

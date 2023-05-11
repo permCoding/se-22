@@ -61,16 +61,16 @@ button.send:hover {
     margin-bottom:10px;
     border:1px solid #CCC;
     padding:5px 9px;
-    font-size:15px!important;
+    font-size:15px;
     line-height:1.4em;
     border-radius:5px;
 }
-.txt:focus, .txtarea:focus {
+.txt:focus {
     border-style:solid;
     border-color:#BABABA;
     color:#444;
 }
-input.error, textarea.error {
+input.error {
     border-color:#973D3D;
     border-style:solid;
     background:#F0BEBE;
