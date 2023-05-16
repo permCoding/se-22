@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Собаки</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <br>
+    <form action="/edit/{{id}}" method="post">
+        <input class="txt" name="dog_name" type="text" placeholder="Кличка собаки" value="{{dog_name}}">
+        <input class="txt" name="color" type="text" placeholder="Цвет" value="{{color}}">
+        <input class="txt" name="age" type="text" placeholder="Возраст" value="{{age}}">
+        <button class="send">Сохранить внесённые изменения</button>
+    </form>
+    <br>
+    <form action="/" method="get">
+        <button class="send">Вернуться к таблице</button>
+    </form>
+    </center>
+</body>
+<html>
