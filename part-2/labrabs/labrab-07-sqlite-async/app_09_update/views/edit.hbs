@@ -5,19 +5,21 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+    <!--
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" />
+    -->
 </head>
 <body>
     <center>
     <br>
-    <form action="/edit/{{id}}" method="post">
+    <form>
         <input class="txt" name="dog_name" type="text" placeholder="Кличка собаки" value="{{dog_name}}">
         <input class="txt" name="color" type="text" placeholder="Цвет" value="{{color}}">
         <input class="txt" name="age" type="text" placeholder="Возраст" value="{{age}}">
-        <button class="send">Сохранить внесённые изменения</button>
-    </form>
-    <br>
-    <form action="/" method="get">
-        <button class="send">Вернуться к таблице</button>
+        <br>
+        <button class="btn btn-primary" formaction="/edit/{{id}}" formmethod="post">Сохранить изменения</button>
+        <button class="btn btn-secondary" formaction="/" formmethod="get">Отменить изменения</button>
     </form>
     </center>
 </body>
